@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Cataguases - Projeto</title>
+    <style>
+        /* Estilos basicos da pagina */
+        body {
+            background-color: #0d0e11;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #16181f;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            margin-right: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Secao Principal */
+        .secao-principal {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #121318;
+        }
+
+        .secao-principal h1 {
+            font-size: 40px;
+            color: #77777e;
+        }
+
+        .secao-principal button {
+            background-color: #16181f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Cards das atracoes */
+        .secao-atracoes {
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #1a1c23;
+            border: 1px solid #cacee2;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .card img {
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            color: #838383;
+            margin-top: 10px;
+        }
+
+        /* Galeria de fotos */
+        .galeria {
+            padding: 30px;
+        }
+
+        .galeria img {
+            width: 250px;
+            height: 160px;
+            margin: 10px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* Formulario interativo */
+        .secao-form {
+            background-color: #1a1c23;
+            padding: 25px;
+            margin: 30px;
+            border-radius: 8px;
+        }
+
+        .secao-form input {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 200px;
+            display: block;
+        }
+
+        .secao-form button {
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 15px;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECALHO DA PAGINA -->
+    <header>
+        <img src="Imagens/Brasao_Cataguases.png" alt="brasão da Cidade" width="50">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#atracoes">Atrações</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#planejar">Planejar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO 1: PRINCIPAL -->
+    <section id="inicio" class="secao-principal"> 
+        <h2>Minha Cataguases</h2>
+        <div>
+            <h1>Cataguases-MG</h1>
+            <p>Berço do Modernismo Zona da Mata</p>
+        </div>
+        <div>
+            <button onclick="alert('Bem-vindo a Cataguases!')">Explorar Cataguases</button>
+            <button onclick="window.location.href='#planejar'">Planejar Visita</button>
+        </div>
+    </section>
+    
+    <!-- SEÇÃO 2: ATRAÇÕES -->
+    <section id="atracoes" class="secao-atracoes">
+        <h2>Atrações Turísticas</h2>
+
+        <div class="card">
+            <img src="Imagens/cine.jpg" alt="cine" width="50">
+            <h3>Cine Teatro Edgard</h3>
+            <p>Relevante polo da história do cinema brasileiro, Ciclo de Cataguases, arquitetura modernista icônica, patrimônio cultural, atualmente fechado para o público.</p>
+        </div>
+
+        <div class="card">
+            <img src="Imagens/santuário.jpg" alt="santuario" width="50">
+            <h3>Santuário de Santa Rita de Cássia</h3>
+            <p>Famoso painel de azulejos de Portinari e arquitetura modernista.</p>
+        </div>
+
+        <div class="card">
+            <img src="Imagens/colegio.jpg" alt="colegio" width="50">
+            <h3>Colégio Cataguases</h3>
+            <p>Projeto arquitetônico icônico assinado por Oscar Niemeyer.</p>
+        </div>
+
+        <div class="card">
+            <img src="Imagens/praça corr.jpg" alt="praça" width="50">
+            <h3>Praça Rui Barbosa</h3>
+            <p>Coração cultural da cidade com esculturas e jardins históricos.</p>
+        </div>
+
+        <div class="card">
+            <img src="Imagens/ponte.jpg" alt="ponte" width="50">
+            <h3>Ponte Metálica</h3>
+            <p>Marco histórico e patrimônio cultural da cidade.</p>
+        </div>
+
+        <div class="card">
+            <img src="Imagens/praça.jpg" alt="chacara" width="50">
+            <h3>Chácara Dona Catarina</h3>
+            <p>Área verde histórica integrada ao patrimônio local.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: GALERIA DE FOTOS -->
+    <section id="fotos" class="galeria">
+        <h2>Fotos da Cidade</h2>
+        <img src="Imagens/cine_foto.jpg" alt="cinema foto">
+        <img src="Imagens/santuário_foto.jpg" alt="santuario foto">
+        <img src="Imagens/colegio_foto.jpg" alt="colegio foto">
+        <img src="Imagens/praça_foto.jpg" alt="praça foto">
+        <img src="Imagens/chacara_foto.jpg" alt="chacara foto">
+    </section>
+
+    <!-- SEÇÃO 4: FORMULARIO COM JAVASCRIPT  -->
+    <section id="planejar" class="secao-form">
+        <h2>Calcular Viagem</h2>
+        <p>Informe os dados para calcular a estimativa do passeio:</p>
+        <br>
+        <label>Quantos dias vai ficar?</label>
+        <input type="number" id="dias" placeholder="Ex: 2">
+
+        <label>Quantas pessoas vão?</label>
+        <input type="number" id="pessoas" placeholder="Ex: 3">
+
+        <button id="btnCalcular">Calcular Roteiro</button>
+
+        <div id="resultado"></div>
+    </section>
+
+    
+    <script>
+        // Pega o botao pelo ID
+        var botao = document.getElementById('btnCalcular');
+
+        // Adiciona evento de clique
+        botao.addEventListener('click', function() {
+            var dias = document.getElementById('dias').value;
+            var pessoas = document.getElementById('pessoas').value;
+            var divResultado = document.getElementById('resultado');
+
+            // Validacao simples com alert
+            if (dias == "" || pessoas == "") {
+                alert("Preencha todos os campos!");
+            } else {
+                var totalPontos = dias * 2;
+                divResultado.innerHTML = "Em " + dias + " dias, seu grupo de " + pessoas + " pessoas poderá visitar cerca de " + totalPontos + " pontos turísticos!";
+            }
+        });
+    </script>
+</body>
+</html>
